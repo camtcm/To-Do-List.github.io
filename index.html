@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="todo-container">
+        <div class="todo-header">
+            <div class="header-text">
+                <h1>¡Bienvenido! 👋</h1>
+                <p id="date-display"></p>
+                <p id="pending-tasks">Tienes 0 tareas pendientes para hoy</p>
+            </div>
+        </div>
+        
+        <select id="priority-filter" class="full-width-select">
+            <option value="all">Todas las tareas</option>
+            <option value="high">Prioridad Alta</option>
+            <option value="medium">Prioridad Media</option>
+            <option value="low">Prioridad Baja</option>
+        </select>
+
+        <div class="input-container">
+            <div class="input-row">
+                <input type="text" id="todoInput" placeholder="Añade una nueva tarea...">
+                <select id="prioritySelect">
+                    <option value="low">Baja</option>
+                    <option value="medium">Media</option>
+                    <option value="high">Alta</option>
+                </select>
+            </div>
+            <button class="add-btn">Añadir Tarea</button>
+        </div>
+
+        <ul id="todoList" class="todo-list"></ul>
+        
+        <button class="delete-all-btn">Eliminar Todas</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
